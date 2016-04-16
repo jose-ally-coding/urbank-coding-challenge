@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>urbank</title>
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css" media="screen" title="no title" charset="utf-8">
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <header>
+      <nav class="navbar">
+        <a href="#" class="toggle"><i class="fa fa-reorder"></i></a>
+        <img src="assets/urbank_logo.png" class="logo">
+        <div class="left">
+          <!-- <a href="#" class="link">Link 1</a>
+          <a href="#" class="link">Link 2</a> -->
+        </div>
+        <div class="right">
+          <a href="#" class="link">home</a>
+          <a href="#" class="link">employee</a>
+          <a href="#" class="link active">company</a>
+          <a href="#" class="link">services</a>
+          <a href="#" class="link">contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="modal-backdrop">
+      <div class="modal">
+        <h1>Sign In To Your Account</h1>
+        <button class="modal-close"><i class="fa fa-close"></i></button>
+        <div class="form-spacer"></div>
+        <div class="row">
+          <div class="label">Username</div>
+          <div class="field-spacer"></div>
+          <div class="field"><input class="form-field" type="text"></div>
+        </div>
+        <div class="row">
+          <div class="label">Password</div>
+          <div class="field-spacer"></div>
+          <div class="field"><input class="form-field" type="password"></div>
+        </div>
+        <button class="login-submit">Login</button>
+      </div>
+    </div>
+
+    <section>
+      <div class="page">
+        <!-- page content -->
+        <div class="column md">
+          <h1>Best Bank Ever!</h1>
+          <p>
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.
+          </p>
+          <h4>Reasons We’re Awesome:</h4>
+          <ul>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Aliquam tincidunt mauris eu risus.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Vestibulum auctor dapibus neque.</li>
+          </ul>
+          <div class="well">
+            <h5>Amazing Mobile Info</h5>
+            <img src="assets/urbank_mobile_phone.png" class="mobilephone">
+            <p>
+              Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+            </p>
+          </div><!-- end of well-->
+
+          <h2>Rates | <b>Check them out.</b></h2>
+
+          <!--
+                  RATES TABLE
+                                        -->
+
+          <div class="rates-table">
+            <div class="header">
+              <div class="cell left"></div>
+              <div class="cell right">Annual Percentage Yield</div>
+              <div class="cell right">Est. Earnings for 1 Year*</div>
+            </div>
+            <div class="entries">
+              <!-- table entries -->
+            </div>
+          </div>
+
+
+        </div>
+        <div class="column sm">
+          <button class="login-button" data-modal="login">Login</button>
+          <div class="tabcon">
+            <div class="tabs">
+              <div class="tab active" data-tab="news">
+                News
+              </div>
+              <div class="tab" data-tab="archive">
+                Archive
+              </div>
+            </div><!-- end of tabs-->
+            <div class="content active" data-content="news">
+              <h4>Lorem ipsum dolor</h4>
+              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+              <h4>Lorem ipsum dolor</h4>
+              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+              <h4>Lorem ipsum dolor</h4>
+              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            </div>
+            <div class="content" data-content="archive">
+              <h4>Lorem ipsum dolor</h4>
+              <h4>Lorem ipsum dolor</h4>
+              <h4>Lorem ipsum dolor</h4>
+              <h4>Lorem ipsum dolor</h4>
+              <h4>Lorem ipsum dolor</h4>
+              <h4>Lorem ipsum dolor</h4>
+              <h4>Lorem ipsum dolor</h4>
+              <h4>Lorem ipsum dolor</h4>
+            </div>
+          </div><!-- end of tabcon-->
+        </div><!-- end of column sm-->
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="copytext">
+          © 2014 URBank
+        </div>
+        <div class="links">
+          <ul>
+            <li>
+              <a href="#">home</a>
+            </li>
+            <li>
+              <a href="#">employee</a>
+            </li>
+            <li>
+              <a href="#">company</a>
+            </li>
+            <li>
+              <a href="#">services</a>
+            </li>
+            <li>
+              <a href="#">contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+
+      <script src="js/bundle.min.js" charset="utf-8"></script>
+  </body>
+</html>

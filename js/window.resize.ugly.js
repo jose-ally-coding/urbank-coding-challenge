@@ -1,0 +1,1 @@
+$(window).resize(function(a){var b=$(".navbar").width();960>b?($("header").css("padding-right","0px"),$("header").css("padding-left","0px")):($("header").css("padding-right","10px"),$("header").css("padding-left","10px"))}),console.log("window resize");

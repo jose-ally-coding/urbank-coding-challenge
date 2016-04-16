@@ -1,0 +1,572 @@
+// Ally Coding Challenge Styles
+// Author: Jose Viscasillas
+
+//////////////////////////////////
+//             VARS             //
+//////////////////////////////////
+// Colors were picked off template using "Sip for Mac"
+
+$font-stack: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$ally-light-blue: #3890C0;
+$ally-dark-blue: #0D6997;
+$ally-dark-blue: #0D6997;
+$ally-purple: #650C5F;
+$ally-light-green: #DDEBE1;
+$ally-dark-green: #BCD7C4;
+$ally-true-white: #FFFFFF;
+$ally-navbar-white: #F9F8F9;
+$ally-dark-grey: #505050;
+$ally-light-grey: #E7E8E9;
+$ally-white-lilac: #E7E8E9;
+
+//////////////////////////////////
+//        BROWSER RESET         //
+//////////////////////////////////
+* {
+  box-sizing: border-box;
+}
+html,body{
+  padding:0;
+  margin:0;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  width:100%;
+  background:$ally-light-blue;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.navbar {
+  // background: red;
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  .toggle, .brand {
+    display: inline-block;
+  }
+  .link {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+    font-family: $font-stack;
+    font-size: 16px;
+    color: white;
+    &:hover,&:active {
+      background: $ally-dark-blue;
+      font-weight: 300;
+    }
+  }
+  .brand {
+    width: 10em;
+    text-align: center;
+    padding: 1em;
+    background: $ally-dark-blue;
+    color: white;
+  }
+  .toggle {
+    padding: 1em;
+    color: black;
+    vertical-align: middle;
+  }
+}
+
+h1{
+  font-family: $font-stack;
+  color:$ally-purple;
+  font-weight: 100;
+  font-size: 36px;
+  margin:0;
+  padding: 0;
+}
+
+h2{
+  font-size: 28px;
+  color:$ally-dark-grey;
+  font-family: $font-stack;
+  font-weight: lighter;
+  b{
+    font-weight: 500;
+  }
+}
+
+.login-button{
+  width:100%;
+  height:35px;
+  background: $ally-purple;
+  color:#fff;
+  font-size: 18px;
+  font-weight: bold;
+  border:none;
+}
+
+p{
+  font-family: $font-stack;
+  font-size: 14px;
+}
+
+h4{
+  font-size: 14px;
+  color:$ally-dark-grey;
+  font-weight: bold;
+  font-family: $font-stack;
+}
+
+h5{
+  font-size: 14px;
+  color:$ally-purple;
+  font-weight: bold;
+  font-family: $font-stack;
+}
+
+.well{
+  background: $ally-dark-green;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+img.mobilephone{
+  float:right;
+  margin-top:-150px;
+}
+
+.modal-backdrop{
+  width: 100%;
+  height: 100%;
+  position:fixed;
+  top:0px;
+  left:0px;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  .modal{
+    width: 448px;
+    height:272px;
+    background: $ally-true-white;
+    border:1px solid #eee;
+    box-shadow: 2px 2px 5px #333;
+    padding:10px;
+    h1{
+      color:$ally-dark-grey;
+      float: left;
+    }
+    .modal-close{
+      float: right;
+      color: $ally-dark-blue;
+      background: transparent;
+      border:none;
+      font-size: 16px;
+    }
+    .login-submit{
+      width:140px;
+      height:35px;
+      background: $ally-purple;
+      color:#fff;
+      font-size: 18px;
+      font-weight: bold;
+      border:none;
+      float: right;
+      margin-top: 30px;
+    }
+    .form-spacer{
+      height:50px;
+    }
+    .row{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      margin-top: 30px;
+      .label{
+        width: 20%;
+        text-align: right;
+        font-size: 14px;
+        font-family: $font-stack;
+        font-weight: bold;
+        align-self: center;
+      }
+      .field-spacer{
+        width: 5%;
+      }
+      .field{
+        width: 75%;
+        text-align: left;
+        .form-field{
+          height: 35px;
+          font-size: 30px;
+          border:2px solid $ally-dark-blue;
+        }
+      }
+    }
+  }
+}
+
+//////////////////////////////////
+//        SECTION'S CSS         //
+//////////////////////////////////
+@media (min-width: 960px) {
+
+  //////////////////////////////////
+  //         FOOTER'S CSS         //
+  //////////////////////////////////
+  footer{
+    width: 100%;
+    height:100px;
+    background:$ally-white-lilac;
+    margin-top:20px;
+    display: flex;
+    flex-direction: row;
+    .container{
+      max-width: 940px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      .copytext{
+        float: left;
+        width: 50%;
+        color:$ally-dark-blue;
+        padding:10px;
+        font-family: $font-stack;
+      }
+      .links{
+        float: left;
+        width: 50%;
+        color:$ally-dark-blue;
+        font-family: $font-stack;
+        ul{
+          display: flex;
+          flex-direction: row;
+          list-style-type: none;
+          justify-content: center;
+          align-content: center;
+          li{
+            padding-left: 35px;
+            float:right;
+            a:link, a:visited{
+              color:$ally-light-blue;
+              font-family: $font-stack;
+              text-decoration: none;
+            }
+            a:active, a:hover{
+              color:$ally-dark-blue;
+              font-family: $font-stack;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+  section {
+    width: 100%;
+    height: auto;
+    // background: red;
+    display: flex;
+    .page{
+      max-width: 940px;
+      width: 100%;
+      // background: green;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top:35px;
+      display: flex;
+      flex-direction: row;
+      .column.md{
+        float: left;
+        width: 75%;
+        padding-right: 20px;
+        // background: red;
+        ul{
+          li{
+            font-family: $font-stack;
+            font-size: 14px;
+          }
+        }
+      }
+      .column.sm{
+        float: left;
+        width: 25%;
+        .tabcon{
+          margin-top:20px;
+          .tabs{
+            // background: red;
+            display: flex;
+            .tab{
+              cursor:pointer;
+              width:auto;
+              // float:left;
+              height: 32px;
+              background: $ally-light-green;
+              align-self: flex-end;
+              border-right:#CBCBCB 1px solid;
+              border-top:#CBCBCB 1px solid;
+              font-family: $font-stack;
+              font-size: 18px;
+              color:$ally-dark-blue;
+              padding-left: 10px;
+              padding-right: 10px;
+              padding-top:5px;
+            }
+            .tab.active{
+              // float:left;
+              font-family: $font-stack;
+              font-size: 18px;
+              color:$ally-dark-grey;
+              background: #F5F5F5;
+              border-right:#CBCBCB 1px solid;
+              border-top:#CBCBCB 1px solid;
+              height: 40px;
+              padding-top:12px;
+              width:auto;
+              align-self: flex-end;
+              padding-left: 10px;
+              padding-right: 10px;
+            }
+          }
+          .content{
+            display: none;
+          }
+          .content.active{
+            display: block;
+            background: #F5F5F5;
+            border-top:#CBCBCB 1px solid;
+            margin-top:-1px;
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-bottom: 8px;
+            h4{
+              font-size: 14px;
+              color:$ally-dark-blue;
+              font-weight: bold;
+              font-family: $font-stack;
+            }
+          }
+        }//end of tabcon
+      }
+    }
+  }
+
+}
+
+
+.rates-table{
+  display: flex;
+  flex-direction: column;
+  .header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+    .cell.left{
+      text-align: left;
+    }
+    .cell.right{
+      text-align: right;
+    }
+    .cell{
+      width: 33%;
+      // background: red;
+      font-size: 12px;
+      color:$ally-dark-grey;
+      font-weight: lighter;
+      font-family: $font-stack;
+    }
+  }
+  .entry:first-child{
+    font-family: $font-stack;
+    font-size: 18px !important;
+    font-weight: 800 !important;
+  }
+  .entry:nth-child(even){
+    background: $ally-dark-green;
+  }
+  .entry{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background: $ally-light-green;
+    .cell.left{
+      text-align: left;
+    }
+    .cell.right{
+      text-align: right;
+    }
+    .cell{
+      width: 33%;
+      font-size: 16px;
+      color:$ally-dark-grey;
+      font-weight: lighter;
+      font-family: $font-stack;
+      padding:15px;
+      border-bottom: 1px solid $ally-dark-green;
+    }
+  }
+}
+
+
+
+@media (max-width: 960px) {
+  img.mobilephone{
+    float:right;
+    margin-top:-45px;
+  }
+
+  //////////////////////////////////
+  //         FOOTER'S CSS         //
+  //////////////////////////////////
+  footer{
+    width: 100%;
+    height:100px;
+    background:$ally-white-lilac;
+    margin-top:20px;
+    display: flex;
+    flex-direction: row;
+    .container{
+      max-width: 940px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      .copytext{
+        float: left;
+        width: 100%;
+        color:$ally-dark-blue;
+        padding:10px;
+        text-align: center;
+        font-family: $font-stack;
+      }
+      .links{
+        display: none;
+      }
+    }
+  }
+
+
+  section {
+    .page{
+      .column.md{
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-top:10px;
+        // background:orange;
+        ul{
+          li{
+            font-family: $font-stack;
+            font-size: 14px;
+          }
+        }
+      }
+      .column.sm{
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-top:10px;
+        .tabcon{
+          margin-top:20px;
+          .tabs{
+            // background: red;
+            display: flex;
+            .tab{
+              cursor:pointer;
+              width:auto;
+              // float:left;
+              height: 32px;
+              background: $ally-light-green;
+              align-self: flex-end;
+              border-right:#CBCBCB 1px solid;
+              border-top:#CBCBCB 1px solid;
+              font-family: $font-stack;
+              font-size: 18px;
+              color:$ally-dark-blue;
+              padding-left: 10px;
+              padding-right: 10px;
+              padding-top:5px;
+            }
+            .tab.active{
+              // float:left;
+              font-family: $font-stack;
+              font-size: 18px;
+              color:$ally-dark-grey;
+              background: #F5F5F5;
+              border-right:#CBCBCB 1px solid;
+              border-top:#CBCBCB 1px solid;
+              height: 40px;
+              padding-top:12px;
+              width:auto;
+              align-self: flex-end;
+              padding-left: 10px;
+              padding-right: 10px;
+            }
+          }
+          .content{
+            display: none;
+          }
+          .content.active{
+            display: block;
+            background: #F5F5F5;
+            border-top:#CBCBCB 1px solid;
+            margin-top:-1px;
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-bottom: 8px;
+            h4{
+              font-size: 14px;
+              color:$ally-dark-blue;
+              font-weight: bold;
+              font-family: $font-stack;
+            }
+          }
+        }//end of tabcon
+        // background:orange;
+      }
+    }
+  }
+}
+
+
+
+
+
+@media (min-width: 960px) {
+    .navbar {
+      display: flex;
+      .left,.right {
+        display: flex;
+        flex: 1;
+      }
+      .link {
+          width: auto;
+      }
+      .right {
+        justify-content: flex-end;
+      }
+      .toggle {
+        display: none;
+      }
+    }
+}
+
+.navbar {
+  div {
+    display: none;
+    @media (min-width: 48em) {
+      display: flex;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .navbar.active {
+    .toggle {
+      color: white;
+    }
+    div {
+      display: block;
+    }
+  }
+}
